@@ -15,7 +15,7 @@ public class CalculatorController {
 
     @GetMapping("/")
     public String greating() {
-        return "Добро по жаловать в калькулятор";
+        return "Добро пожаловать в калькулятор";
     }
 
     @GetMapping("/plus")
