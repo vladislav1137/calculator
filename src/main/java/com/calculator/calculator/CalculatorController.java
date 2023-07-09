@@ -15,12 +15,12 @@ public class CalculatorController {
 
     @GetMapping("/")
     public String greating() {
-        return "Добро пожаловать в калькулятор";
+        return "Добро по жаловать в калькулятор";
     }
 
     @GetMapping("/plus")
     public String add(@RequestParam (name = "num1")int a, @RequestParam (name = "num2")int b) {
-       return a + "+" + b + "=" + calculator.add(a,b);
+        return a + "+" + b + "=" + calculator.add(a,b);
     }
     @GetMapping("/minus")
     public String minus(@RequestParam int num1, @RequestParam int num2) {
