@@ -20,7 +20,7 @@ public class CalculatorController {
 
     @GetMapping("/plus")
     public String add(@RequestParam (name = "num1")int a, @RequestParam (name = "num2")int b) {
-       return a + "+" + b + "=" + calculator.add(a,b);
+        return a + "+" + b + "=" + calculator.add(a,b);
     }
     @GetMapping("/minus")
     public String minus(@RequestParam int num1, @RequestParam int num2) {
